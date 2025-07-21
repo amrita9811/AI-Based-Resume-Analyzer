@@ -1,50 +1,109 @@
-  <h1>AI Based Resume Analyzer </h1>
+# 🧠 AI-Based Resume Analyzer
 
--->About the Project
-    <p align="justify"> 
-      A tool which parses information from a resume using natural language processing and finds the keywords, clusters them into different sectors based on their keywords. 
-      And shows recommendations, predictions, analytics to the applicant / recruiter based on keyword matching.
-    </p>
+An intelligent resume analysis tool that parses resumes using NLP techniques, identifies key skills and information, and provides job role predictions, resume feedback, and detailed analytics for both users and admins.
 
--->Scope:
-1. It can be used for getting all the resume data into a structured tabular format and csv as well, so that the organization can use those data for analytical purposes
-2. By providing recommendations, predictions and overall score user can improve their resume and can keep on testing it on the tool
-3. It can be used by colleges to get insight of students and their resume before placements
-4. Helps in getting analytics for roles which users are mostly looking for
+---
 
--->Tech Stack:
-1. Frontend: Streamlit, HTML, CSS, JavaScript
-2. Backend: Streamlit, Python
-3. Database: MySQL
-4. Libraries used: pandas, pyreparser, pdfminer3, Plotly, nltk
+## 📌 About the Project
 
+This tool leverages Natural Language Processing (NLP) to extract, classify, and analyze information from resumes. It helps both applicants and recruiters by identifying skills, predicting job roles, and offering data-driven insights.
 
--->Features:
-<i>On the client side</i>
-- Fetching Location and Miscellaneous Data (Using Parsing Techniques to fetch)
-- Basic Information
-- Skills
-- Keywords
+Key highlights include:
+- Resume parsing and keyword extraction
+- Skill recommendations based on job roles
+- Resume score and feedback
+- Role-based predictions using rule-based logic
+- Admin panel with visual analytics and CSV exports
 
-Using logical programs, it will recommend
-- Skills that can be added according to the job role
-- Predicted job role
-- Resume tips and ideas
-- Overall Score
+---
 
-<i>On the admin side</i>
-- Get all applicant’s data into tabular format
-- Download user’s data into csv file
-- View all saved uploaded pdf in Uploaded Resume folder
+## 🎯 Scope
 
-  Pie Charts for: -
-- Ratings
-- Predicted field / roles
-- Experience level
-- Resume score
+- Convert uploaded resumes into structured tabular data for storage or analysis
+- Allow users to improve their resumes based on real-time recommendations and feedback
+- Provide institutions with resume insights before placements
+- Enable recruiters to visualize trends in applicant data such as popular job roles, resume quality, and experience levels
 
--->Requirements:
-1. Python (3.8>=)
-2. MySQL 
-3. Visual Studio Code 
-4. Visual Studio build tools for C++ 
+---
+
+## ⚙️ Tech Stack
+
+**Frontend:**
+- Streamlit
+- HTML / CSS
+- JavaScript
+
+**Backend:**
+- Python
+- Streamlit
+
+**Database:**
+- MySQL
+
+**Libraries Used:**
+- `pandas`
+- `nltk`
+- `pyresparser`
+- `pdfminer.six`
+- `plotly`
+
+---
+
+## 🚀 Features
+
+### 👤 For Users:
+- Resume Parsing (Location, Contact Info, etc.)
+- Extraction of:
+  - Basic Information
+  - Skills
+  - Keywords
+- Resume Enhancement:
+  - Skill Recommendations
+  - Predicted Job Role
+  - Resume Tips
+  - Resume Score
+
+### 🛠️ For Admins:
+- Dashboard of Uploaded Resumes
+- Tabular View of All User Data
+- Export All Data to CSV
+- Resume Storage System
+- Visual Analytics:
+  - Pie charts for Resume Ratings
+  - Field/Role Predictions
+  - Experience Distribution
+  - Resume Scores
+
+---
+
+## 💾 Requirements
+
+- Python >= 3.8
+- MySQL Server
+- Visual Studio Code
+- Visual Studio Build Tools for C++ (for compiling certain Python packages)
+
+---
+
+## ⚡ Getting Started
+
+### 1. Clone the Repository
+(on your terminal) 
+git clone https://github.com/your-username/AI-Resume-Analyzer-Amrita.git
+cd AI-Resume-Analyzer-Amrita
+
+### 2. Install Dependencies
+pip install -r requirements.txt
+
+### 3. Run the application 
+streamlit run app.py
+
+### Folder Structure
+AI-Resume-Analyzer-Amrita/
+│
+├── Uploaded_Resumes/         # Folder to store uploaded resume PDFs
+├── app.py                    # Main Streamlit app
+├── utils/                    # Utility functions and parsers
+├── requirements.txt          # Required Python packages
+├── README.md                 # Project documentation
+└── .gitignore                # Ignored files and folders
