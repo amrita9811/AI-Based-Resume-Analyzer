@@ -97,13 +97,3 @@ pip install -r requirements.txt
 
 ### 3. Run the application 
 streamlit run app.py
-
-### Folder Structure
-AI-Resume-Analyzer-Amrita/
-│
-├── Uploaded_Resumes/         # Folder to store uploaded resume PDFs
-├── app.py                    # Main Streamlit app
-├── utils/                    # Utility functions and parsers
-├── requirements.txt          # Required Python packages
-├── README.md                 # Project documentation
-└── .gitignore                # Ignored files and folders
